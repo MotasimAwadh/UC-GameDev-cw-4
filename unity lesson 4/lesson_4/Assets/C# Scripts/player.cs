@@ -16,14 +16,14 @@ public class player : MonoBehaviour
         
         
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             if (transform.position.x < 3f)
             {
                 transform.position = transform.position + new Vector3(3f, 0, 0);
             }
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             if (transform.position.x > -3f)
             {
